@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstro'ya Davet Edildiniz!</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f5f5f5; line-height: 1.6;">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="min-width: 100%; background-color: #f5f5f5;">
+        <tr>
+            <td align="center" style="padding: 40px 20px;">
+                <table cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%; background-color: #ffffff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+                    <!-- Header -->
+                    <tr>
+                        <td style="padding: 40px 40px 20px; text-align: center; border-bottom: 1px solid #eee;">
+                            <div style="display: inline-block; width: 60px; height: 60px; background-color: #F50052; border-radius: 12px; text-align: center; line-height: 60px;">
+                                <span style="color: white; font-size: 32px; font-weight: bold;">B</span>
+                            </div>
+                            <h1 style="margin: 20px 0 10px; color: #1a1a1a; font-size: 28px; font-weight: 700;">Bookstro'ya Davet Edildiniz! 🎉</h1>
+                            <p style="margin: 0; color: #666; font-size: 16px;">Kitap severler topluluğuna katılın</p>
+                        </td>
+                    </tr>
+                    
+                    <!-- Content -->
+                    <tr>
+                        <td style="padding: 40px;">
+                            <!-- Inviter Info (if available) -->
+                            {{ if .InviterName }}
+                            <div style="background-color: #e8f5e9; border-radius: 8px; padding: 20px; margin-bottom: 30px; text-align: center;">
+                                <p style="margin: 0; color: #2e7d32; font-size: 16px;">
+                                    <strong>{{ .InviterName }}</strong> sizi Bookstro'ya davet etti!
+                                </p>
+                            </div>
+                            {{ end }}
+
+                            <p style="margin: 0 0 30px; color: #333; font-size: 16px; line-height: 1.6;">
+                                Merhaba,<br><br>
+                                Bookstro'ya özel olarak davet edildiniz! Bookstro, kitap tutkunlarının bir araya geldiği, kitaplar hakkında konuştuğu, yeni kitaplar keşfettiği ve okuma deneyimlerini paylaştığı bir platform.
+                            </p>
+
+                            <!-- Primary CTA -->
+                            <div style="background-color: #f8f8f8; border-radius: 8px; padding: 24px; margin-bottom: 24px; text-align: center;">
+                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td align="center">
+                                            <a href="{{ .ConfirmationURL }}" style="display: inline-block; padding: 14px 32px; background-color: #F50052; color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px;">Daveti Kabul Et ve Başla</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p style="margin: 16px 0 0; color: #666; font-size: 12px;">
+                                    Buton çalışmıyorsa, aşağıdaki bağlantıyı kopyalayıp tarayıcınıza yapıştırın:
+                                </p>
+                                <p style="margin: 8px 0 0; color: #999; font-size: 11px; word-break: break-all;">
+                                    {{ .ConfirmationURL }}
+                                </p>
+                            </div>
+
+                            <!-- What is Bookstro -->
+                            <div style="margin: 40px 0;">
+                                <h2 style="margin: 0 0 20px; color: #1a1a1a; font-size: 22px; text-align: center;">Bookstro'da Neler Yapabilirsiniz?</h2>
+                                
+                                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 30px;">
+                                    <tr>
+                                        <td style="padding: 20px; background-color: #fce4ec; border-radius: 8px; text-align: center;">
+                                            <div style="font-size: 32px; margin-bottom: 10px;">📚</div>
+                                            <h3 style="margin: 0 0 8px; color: #880e4f; font-size: 18px;">Kişisel Kütüphane</h3>
+                                            <p style="margin: 0; color: #880e4f; font-size: 14px;">
+                                                Okuduğunuz, okumak istediğiniz ve şu anda okuduğunuz kitapları organize edin
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 30px;">
+                                    <tr>
+                                        <td width="48%" style="padding: 20px; background-color: #e3f2fd; border-radius: 8px; text-align: center;">
+                                            <div style="font-size: 32px; margin-bottom: 10px;">⭐</div>
+                                            <h3 style="margin: 0 0 8px; color: #1565c0; font-size: 16px;">Puan ve İnceleme</h3>
+                                            <p style="margin: 0; color: #1565c0; font-size: 13px;">
+                                                Kitaplara puan verin ve detaylı incelemeler yazın
+                                            </p>
+                                        </td>
+                                        <td width="4%"></td>
+                                        <td width="48%" style="padding: 20px; background-color: #f3e5f5; border-radius: 8px; text-align: center;">
+                                            <div style="font-size: 32px; margin-bottom: 10px;">💭</div>
+                                            <h3 style="margin: 0 0 8px; color: #6a1b9a; font-size: 16px;">Alıntı Paylaş</h3>
+                                            <p style="margin: 0; color: #6a1b9a; font-size: 13px;">
+                                                En sevdiğiniz alıntıları kaydedin ve paylaşın
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 30px;">
+                                    <tr>
+                                        <td width="48%" style="padding: 20px; background-color: #e8f5e9; border-radius: 8px; text-align: center;">
+                                            <div style="font-size: 32px; margin-bottom: 10px;">🔍</div>
+                                            <h3 style="margin: 0 0 8px; color: #2e7d32; font-size: 16px;">Kitap Keşfet</h3>
+                                            <p style="margin: 0; color: #2e7d32; font-size: 13px;">
+                                                Zevkinize uygun yeni kitaplar keşfedin
+                                            </p>
+                                        </td>
+                                        <td width="4%"></td>
+                                        <td width="48%" style="padding: 20px; background-color: #fff3e0; border-radius: 8px; text-align: center;">
+                                            <div style="font-size: 32px; margin-bottom: 10px;">👥</div>
+                                            <h3 style="margin: 0 0 8px; color: #e65100; font-size: 16px;">Topluluk</h3>
+                                            <p style="margin: 0; color: #e65100; font-size: 13px;">
+                                                Benzer kitap zevkine sahip okurlarla tanışın
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <!-- Getting Started -->
+                            <div style="background-color: #f5f5f5; border-radius: 8px; padding: 24px; margin-bottom: 24px;">
+                                <h3 style="margin: 0 0 16px; color: #1a1a1a; font-size: 18px;">🚀 Nasıl Başlarsınız?</h3>
+                                <ol style="margin: 0; padding-left: 20px; color: #666; font-size: 14px;">
+                                    <li style="margin-bottom: 12px;">Yukarıdaki "Daveti Kabul Et" butonuna tıklayın</li>
+                                    <li style="margin-bottom: 12px;">Hesabınızı oluşturun (sadece 1 dakika!)</li>
+                                    <li style="margin-bottom: 12px;">İlk kitabınızı kütüphanenize ekleyin</li>
+                                    <li>Bookstro topluluğunun keyfini çıkarın!</li>
+                                </ol>
+                            </div>
+
+                            <!-- Expiration Notice -->
+                            <div style="background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 8px; padding: 16px; margin-bottom: 24px;">
+                                <p style="margin: 0; color: #856404; font-size: 14px;">
+                                    <strong>⏰ Önemli:</strong> Bu davet bağlantısı 7 gün boyunca geçerlidir.
+                                </p>
+                            </div>
+
+                            <p style="margin: 20px 0 0; color: #666; font-size: 14px; line-height: 1.6; text-align: center;">
+                                Bookstro'da görüşmek üzere! 📖
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="padding: 30px 40px; background-color: #f8f8f8; border-top: 1px solid #eee; text-align: center; border-radius: 0 0 12px 12px;">
+                            <p style="margin: 0 0 10px; color: #666; font-size: 14px;">
+                                Sorularınız mı var?
+                            </p>
+                            <p style="margin: 0 0 20px;">
+                                <a href="mailto:merhaba@bookstro.com" style="color: #F50052; text-decoration: none; font-size: 14px;">merhaba@bookstro.com</a>
+                            </p>
+                            <p style="margin: 0; color: #999; font-size: 12px;">
+                                © 2024 Bookstro. Tüm hakları saklıdır.
+                            </p>
+                            <div style="margin-top: 20px;">
+                                <a href="https://bookstro.com" style="color: #F50052; text-decoration: none; font-size: 12px;">bookstro.com</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
